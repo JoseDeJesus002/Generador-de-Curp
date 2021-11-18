@@ -25,10 +25,4 @@
         let curp = apellido[0]+ apellido[3] + apellido2[0] + nombre[0] + fecha + sexo[0] + estado[0, 1];
         alert(curp + numero);
     }
-  //console.log(getRandomInt(10,99));
-  //function getRandomInt(min, max) {
-    //return Math.floor(Math.random() * (max - min)) + min;
-  //}
-
-  //console.log(conjunto);
 
