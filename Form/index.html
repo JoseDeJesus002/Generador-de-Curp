@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+     
+    <link rel="stylesheet" href="design.css">
+</head>
+   
+<body>
+    <section class="form-register">
+    <form action="recibe.php" name="formulario" method="post">
+    <h4>Formulario</h4>
+
+    <input class ="controls" type="text" placeholder="Nombre Completo" maxlength="30" id="name" name="name" required>
+
+
+    <input class ="controls" type="text" placeholder="Matricula" maxlength="10" id="id" name="id" required>
+ 
+
+    <input class ="controls" type="text" placeholder="Edad" maxlength="2" id="year" name="year" required>
+
+
+    <h9>Sexo</h9>
+    <p></p>
+    <input type="radio" name="sexo" id="hombre" value="Hombre" required > Hombre
+    <input type="radio" name="sexo" id ="mujer" value="Mujer" required > Mujer
+   
+
+   <select class ="controls" name="estado civil" id="state.civil">
+       <option value="value1">Estado civil</option>
+       <option value="value1">Casado</option>
+       <option value="value1">Soltero</option>
+       <option value="value1">Viudo</option>
+   </select>
+
+
+   <input class ="controls" type="text" placeholder="Telefono" onkeypress="return SoloNumeros(event);" required>
+    <script src="main.js"></script>
+
+
+    <input class ="controls" type="email" placeholder="Correo electronico" id="email" name="email" required>
+    <p><span id="emailOK"></span></p>
+    <script src="main.js"></script>
+   
+
+    <select class ="controls" name="Carreras">
+        <option value="value3">Carrera</option><
+        <option value="value1">Ingenieria en Software</option>
+        <option value="value3">Ingenieria Financiera</option>
+        <option value="value3">Ingenieria Manufactura</option>
+        <option value="value3">Licienciatura en negocios internacionales</option>
+    </select>
+
+
+    <input class ="controls" type="text" placeholder="Grupo" maxlength="6" id="group" name="group" required>
+
+
+    <h9> Estudiante </h9>
+    <input type="checkbox" name="yes" id="yes" value="Si" required > 
+
+    <input class="buttons" type="submit" name="btnEnviar" id="btnEnviar" value="Enviar formulario">
+    </section>
+    </form>
+    
+</body>
+</html>
