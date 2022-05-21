@@ -1,4 +1,4 @@
-function SoloNumeros(evt)
+/*function SoloNumeros(evt)
     {
     if(window.event){
     keynum = evt.keyCode;
@@ -17,6 +17,8 @@ function SoloNumeros(evt)
   return false;
   }
 }
+*/
+
 function validarEmail(valor) {
   if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3,4})+$/.test(valor)){
    alert("La dirección de email " + valor + " es correcta.");
@@ -24,17 +26,7 @@ function validarEmail(valor) {
    alert("La dirección de email es incorrecta.");
   }
 }
-/*
-function mayor(){
-  let anios=document.getElementById('years').value;
-  if(anios >= 18){
-    alert("Eres mayor de edad");
-  }else{
-    alert("Menor de edad");
-  }
 
-}
-*/
 function showContent() {
   element = document.getElementById("content");
   check = document.getElementById("checked");
@@ -51,23 +43,6 @@ let cat=localStorage.getItem('usuario');
 localStorage.clear();
 console.log(cat);
 }
-add();
 
-        function info()
-        {
-            if(typeof(Storage)!=="undefined"){
-                var fn = document.getElementById("name").value;
-                var ln = document.getElementById("year").value;
-                var zc = document.getElementById("telefono").value;
-        
-                localStorage.name = fn;
-                localStorage.year = ln;
-                localStorage.telefono = zc;
-        
-                document.getElementById("result").innerHTML=localStorage.name+" "+" "+localStorage.year+" "+localStorage.telefono;
-            }else{
-                document.getElementById("result").innerHTML="Sorry, your browser does not support web storage...";
-            }
-            
-        }
-        console.log(fn,ln,zc);
+
+

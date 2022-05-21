@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="design.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section class="form-register">
+    <form id="form">
+    <h4>Registrate</h4>
+
+    <input class ="controls" type="text" placeholder="Nombre" maxlength="20" id="name" name="name" required>
+    
+    <input class ="controls" type="number" placeholder="Edad" maxlength="99" id="year" name="year" required>
+
+    <input class= "controls" type="text" placeholder="Username" maxlength="20" id="user" name="user" required>
+    
+    <input class ="controls" type="email" placeholder="Correo electronico" id="email" name="email" required>
+    <p><span id="emailOK"></span></p>
+
+
+    <h9>Sexo</h9>
+    <p></p>
+    <input type="radio" name="sexo" id="sexo" value="Hombre" required > Hombre
+    <input type="radio" name="sexo" id ="sexo" value="Mujer" required > Mujer
+    <input type="radio" name="sexo" id ="sexo" value="binario" required > Gay
+    <br><br>
+
+    <input class="controls" type="text" placeholder="contraseña" maxlength="16" id="password" name="password" required>
+
+    <input class="controls" type="text" placeholder="confirmar contraseña" maxlength="16" id="password" name="password" required>
+
+    <div id="content" style="display: none;">
+        <input class ="controls" type="text" placeholder="Matricula" maxlength="10" id="id" name="id" >
+
+        <select class="controls" name="carreras" id="carrera">
+            <option value="value3">Carrera</option>
+            <option value="value1">Ingenieria en Software</option>
+            <option value="value3">Ingenieria Financiera</option>
+            <option value="value3">Ingenieria Manufactura</option>
+            <option value="value3">Licienciatura en negocios internacionales</option>
+        </select>
+        <input class ="controls" type="text" placeholder="Grupo" maxlength="6" id="group" name="group">
+    </div>
+
+    <h9> Estudiante </h9><br>
+    <input type="checkbox" name="check" id="checked" value="1" onchange="showContent()"> 
+
+    <a href="index-login.html"><input class="buttons" type="button" name="btnregister" id="btnregister" value="Registrate"></a>
+
+    <a href="index-login.html"><input class="buttons" type="button" name="btnback" id="btnback" value="Regresar"></a>
+    </section>
+    </form>
+    <script src="main.js"></script>
+    <script src="data.js"></script>
+    <script src="clients.js"></script>
+</body>
+</html>
