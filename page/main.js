@@ -19,6 +19,11 @@
 }
 */
 
+var btnRegistrar=document.querySelector('#btnregister');
+    btnRegistrar.addEventListener('click',function(){
+        window.location.assign("index-register.html");
+    })
+
 function validarEmail(valor) {
   if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3,4})+$/.test(valor)){
    alert("La dirección de email " + valor + " es correcta.");
