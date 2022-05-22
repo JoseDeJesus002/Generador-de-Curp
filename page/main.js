@@ -18,10 +18,16 @@
   }
 }
 */
-
+//funcion que redirecciona a registro.html
 var btnRegistrar=document.querySelector('#btnregister');
     btnRegistrar.addEventListener('click',function(){
         window.location.assign("index-register.html");
+    })
+    
+//funcion que incia sesion a point-vent.html 
+var btnLogin=document.querySelector('#btnlogin');
+    btnLogin.addEventListener('click',function(){
+        window.location.assign("point-vent.html");
     })
 
 function validarEmail(valor) {
