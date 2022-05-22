@@ -6,9 +6,13 @@
 
     <body>
         <center><h2> PUNTO DE VENTA</h2></center>
+        <label for="nameprod">Nombre del producto</label>
+        <p></p>
+        <input type="text" placeholder="Producto" name="nameprod" id="nameprod" required>
+        <p></p>
         <label for="desc">Descripcion del Producto</label>
         <p></p>
-        <input type="text" placeholder="Producto" name="desc" id="desc" required>
+        <input type="text" placeholder="Descripcion" name="desc" id="desc" required>
         <p></p>
         <label for="code">Codigo de barras</label>
         <p></p>
@@ -17,8 +21,11 @@
         <label for="price">Costo del Producto</label>
         <p></p>
         <input type="number" placeholder="Costo" name="price" id="price" required>
+        <p></p>
+        <input type="button" name="btnregprod" id="btnregprod" value="Registrar producto">
 
-
+        <script src="plugins/products.js"></script>
+        <script src="plugins/data-prod.js"></script>
 
 
     </body>
