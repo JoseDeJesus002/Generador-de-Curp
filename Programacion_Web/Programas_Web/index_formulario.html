@@ -4,21 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/stylesheets.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="Formulario/style/style.css">
     <title>Document</title>
 </head>
 <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Programación</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <li><a class="nav-link" href="Index_Ticket.html">Ticket</a></li>
+                        <li><a class="nav-link" href="Formulario/index.html">Formulario</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <br>
+    <div class="form" align="center">
     <table>
-        <tr>
+        <tr class="titulo">
             <td colspan="3">1. Can I park here?</td>
         </tr>
         <tr>
             <td><input type="radio" value="a1" name="1" checked="true"/>Sorry, I did that.</td>
             <td><input type="radio" value="a2" name="1"/>It's the same place</td>
             <td><input type="radio" value="a3" name="1"/>Only for half an hour.</td>
-            <td><img src="assets/check.ico" height="20":width="20" id="correcto" style="display:none;"></td>
-            <td><img src="assets/error.ico" height="20":width="20" id="error" style="display:none;"></td>
+            <td class="check"><img src="assets/check.ico" height="20":width="20" id="correcto" style="display:none;"></td>
+            <td class="check"><img src="assets/error.ico" height="20":width="20" id="error" style="display:none;"></td>
         </tr>
-        <tr>
+        <tr class="titulo">
             <td colspan="3">2. What colour will you paint the children's bedroom?</td>
         </tr>
         <tr>
@@ -26,7 +46,7 @@
             <td><input type="radio" value="b2" name="2"/>We can't decide.</td>
             <td><input type="radio" value="b3" name="2"/>It wasn't very difficult.</td>
         </tr>
-        <tr>
+        <tr class="titulo">
             <td colspan="3">3. I can't understand this email.</td>
         </tr>
         <tr>
@@ -34,7 +54,7 @@
             <td><input type="radio" value="c2" name="3"/>Don't you know?</td>
             <td><input type="radio" value="c3" name="3"/>I suppose you can.</td>
         </tr>
-        <tr>
+        <tr class="titulo">
             <td colspan="3">4. I'd like two tickets for tomorrow night.</td>
         </tr>
         <tr>
@@ -42,7 +62,7 @@
             <td><input type="radio" value="d2" name="4"/>Afternoon and evening.</td>
             <td><input type="radio" value="d3" name="4"/>I'll just check for you.</td>
         </tr>
-        <tr>
+        <tr class="titulo">
             <td colspan="3">5. Shall we go to the gym now?</td>
         </tr>
         <tr>
@@ -50,7 +70,7 @@
             <td><input type="radio" value="e2" name="5"/>It's very good.</td>
             <td><input type="radio" value="e3" name="5"/>Not at all.</td>
         </tr>
-        <tr>
+        <tr class="titulo">
             <td colspan="4">6. His eyes were ...... bad that he couldn't read the number plate of the car in front.</td>
         </tr>
         <tr>
@@ -59,7 +79,7 @@
             <td><input type="radio" value="f3" name="6"/>so</td>
             <td><input type="radio" value="f4" name="6"/>very</td>
         </tr>
-        <tr>
+        <tr class="titulo">
             <td colspan="4">7. The company needs to decide ...... and for all what its position is on this point.</td>
         </tr>
         <tr>
@@ -68,7 +88,7 @@
             <td><input type="radio" value="g3" name="7"/>first</td>
             <td><input type="radio" value="g4" name="7"/>finally</td>
         </tr>
-        <tr>
+        <tr class="titulo">
             <td colspan="4">8. Don't put your cup on the ...... of the table – someone will knock it off.</td>
         </tr>
         <tr>
@@ -77,7 +97,7 @@
             <td><input type="radio" value="h3" name="8"/>boundary</td>
             <td><input type="radio" value="h4" name="8"/>border</td>
         </tr>
-        <tr>
+        <tr class="titulo">
             <td colspan="4">9. I'm sorry - I didn't ...... to disturb you.</td>
         </tr>
         <tr>
@@ -86,7 +106,7 @@
             <td><input type="radio" value="i3" name="9"/>mean</td>
             <td><input type="radio" value="i4" name="9"/>suppose</td>
         </tr>
-        <tr>
+        <tr class="titulo">
             <td colspan="4">10. The singer ended the concert ...... her most popular song.</td>
         </tr>
         <tr>
@@ -96,9 +116,11 @@
             <td><input type="radio" value="j4" name="10"/>as</td>
         </tr>
     </table>
-    <button onclick="comprobarRadio(respuestaCorrecta)">Ver resultado</button>
-    <br>
+</div>
     <p id="resultados"></p>
+    <center><button onclick="comprobarRadio(respuestaCorrecta)">Ver resultado</button></center>
+    <br><br>
+    <p class="lead" align="left">© 2022 Moquer Company</p>
 </body>
-<script src="scripts/script_from.js"></script>
+<script src="Formulario/scripts/script_from.js"></script>
 </html>
