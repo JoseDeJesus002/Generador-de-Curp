@@ -26,7 +26,7 @@ function comprobarRadio(vector)
             }
         }
     }
-    document.getElementById("resultasdos").innerHTM=" Respuestas correctas" + " "+ "<b>" + respuestasBuenas + "</b>" + "</br>" + "Respuestas malas" + respuestasMalas;
+    document.getElementById("resultasdos").innerHTM=" Respuestas correctas" + " "+ "<b>" + respuestasBuenas + "</b>" + "</br>" + "Respuestas malas"+ " " + respuestasMalas;
 }
 
 
