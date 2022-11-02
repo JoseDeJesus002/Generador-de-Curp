@@ -9,24 +9,96 @@
 <body>
     <table>
         <tr>
-            <td colspan="3">1. </td>
+            <td colspan="3">1. Can I park here?</td>
         </tr>
         <tr>
-            <td><input type="radio" value="a1" name="1" checked="true"/>Repuesta</td>
-            <td><input type="radio" value="a2" name="1"/>Repuesta2</td>
-            <td><input type="radio" value="a3" name="1"/>Repuesta2</td>
-            <td><input type="radio" value="a4" name="1"/>Repuesta2</td>
+            <td><input type="radio" value="a1" name="1" checked="true"/>Sorry, I did that.</td>
+            <td><input type="radio" value="a2" name="1"/>It's the same place</td>
+            <td><input type="radio" value="a3" name="1"/>Only for half an hour.</td>
+            <td><img src="assets/check.ico" height="20":width="20" id="correct" style="visibility:hidden;"></td>
+            <td><img src="assets/error.ico" height="20":width="20" id="error" style="visibility:hidden;"></td>
         </tr>
         <tr>
-            <td colspan="3">2. </td>
+            <td colspan="3">2. What colour will you paint the children's bedroom?</td>
         </tr>
         <tr>
-            <td><input type="radio" value="a1" name="1" checked="true"/>Repuesta</td>
-            <td><input type="radio" value="a2" name="1"/>Repuesta2</td>
-            <td><input type="radio" value="a3" name="1"/>Repuesta2</td>
-            <td><input type="radio" value="a4" name="1"/>Repuesta2</td>
+            <td><input type="radio" value="b1" name="2" checked="true"/>I hope it was right.</td>
+            <td><input type="radio" value="b2" name="2"/>We can't decide.</td>
+            <td><input type="radio" value="b3" name="2"/>It wasn't very difficult.</td>
+        </tr>
+        <tr>
+            <td colspan="3">3. I can't understand this email.</td>
+        </tr>
+        <tr>
+            <td><input type="radio" value="c1" name="3" checked="true"/>Would you like some help?</td>
+            <td><input type="radio" value="c2" name="3"/>Don't you know?</td>
+            <td><input type="radio" value="c3" name="3"/>I suppose you can.</td>
+        </tr>
+        <tr>
+            <td colspan="3">4. I'd like two tickets for tomorrow night.</td>
+        </tr>
+        <tr>
+            <td><input type="radio" value="d1" name="4" checked="true"/>How much did you pay?</td>
+            <td><input type="radio" value="d2" name="4"/>Afternoon and evening.</td>
+            <td><input type="radio" value="d3" name="4"/>I'll just check for you.</td>
+        </tr>
+        <tr>
+            <td colspan="3">5. Shall we go to the gym now?</td>
+        </tr>
+        <tr>
+            <td><input type="radio" value="e1" name="5" checked="true"/>I'm too tired.</td>
+            <td><input type="radio" value="e2" name="5"/>It's very good.</td>
+            <td><input type="radio" value="e3" name="5"/>Not at all.</td>
+        </tr>
+        <tr>
+            <td colspan="4">6. His eyes were ...... bad that he couldn't read the number plate of the car in front.</td>
+        </tr>
+        <tr>
+            <td><input type="radio" value="f1" name="6" checked="true"/>such</td>
+            <td><input type="radio" value="f2" name="6"/>too</td>
+            <td><input type="radio" value="f3" name="6"/>so</td>
+            <td><input type="radio" value="f4" name="6"/>very</td>
+        </tr>
+        <tr>
+            <td colspan="4">7. The company needs to decide ...... and for all what its position is on this point.</td>
+        </tr>
+        <tr>
+            <td><input type="radio" value="g1" name="7" checked="true"/>here</td>
+            <td><input type="radio" value="g2" name="7"/>once</td>
+            <td><input type="radio" value="g3" name="7"/>first</td>
+            <td><input type="radio" value="g4" name="7"/>finally</td>
+        </tr>
+        <tr>
+            <td colspan="4">8. Don't put your cup on the ...... of the table – someone will knock it off.</td>
+        </tr>
+        <tr>
+            <td><input type="radio" value="h1" name="8" checked="true"/>outside</td>
+            <td><input type="radio" value="h2" name="8"/>edge</td>
+            <td><input type="radio" value="h3" name="8"/>boundary</td>
+            <td><input type="radio" value="h4" name="8"/>border</td>
+        </tr>
+        <tr>
+            <td colspan="4">9. I'm sorry - I didn't ...... to disturb you.</td>
+        </tr>
+        <tr>
+            <td><input type="radio" value="i1" name="9" checked="true"/>hope</td>
+            <td><input type="radio" value="i2" name="9"/>think</td>
+            <td><input type="radio" value="i3" name="9"/>mean</td>
+            <td><input type="radio" value="i4" name="9"/>suppose</td>
+        </tr>
+        <tr>
+            <td colspan="4">10. The singer ended the concert ...... her most popular song.</td>
+        </tr>
+        <tr>
+            <td><input type="radio" value="j1" name="10" checked="true"/>by</td>
+            <td><input type="radio" value="j2" name="10"/>with</td>
+            <td><input type="radio" value="j3" name="10"/>in</td>
+            <td><input type="radio" value="j4" name="10"/>as</td>
         </tr>
     </table>
-    
+    <button onclick="comprobarRadio(respuestaCorrecta)">Ver resultado</button>
+    <br>
+    <p id="resultados"></p>
 </body>
+<script src="scripts/script_from.js"></script>
 </html>
