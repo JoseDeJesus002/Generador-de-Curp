@@ -17,7 +17,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item dropdown">
-                        <li><a class="nav-link" href="Index_Ticket.html">Ticket</a></li>
+                        <li><a class="nav-link" href="index.html">Incio</a></li>
                         <li><a class="nav-link" href="index_formulario.html">Formulario</a></li>
                         </ul>
                     </li>
@@ -26,11 +26,10 @@
         </div>
     </nav>
 	<br>
-	<h1 class="titulo" align="center">WALMART</h1>
-	
-	<p align="center" id="aviso"></p>
 
 	<div class="contenido" align="center">
+	<h1 class="titulo" align="center">WALMART</h1>
+	<h2 class="encabezado" align="center">Ticket de compra</h2>
 	<input style="height: 20px;" type="text" id="Producto" placeholder="Ingresa el producto">
 	<input style="height: 20px; width: 60px;" type="text" id="Precio" placeholder="Precio">
 	<input style="height: 20px; width: 80px;" type="text" id="Cantidad" placeholder="Cantidad">
@@ -75,13 +74,14 @@
 	<p id="Subtotal"></p>
 	<p id="IVA"></p>
 	<p id="Total"></p>
+	<p id="aviso"></p>
 	<p id="mensaje"></p>
 	<button onclick="total()">Total</button>
 	<button onclick="imprimir()">Imprimir</button>
 </div>
 </div>
-	<br><br>
-	<p class="lead" align="left"><b>© 2022 Moquer Company</b></p>
+	<br>
+	<p class="lead" align="left">© 2022 Moquer Company</p>
 	<br>
 		<script src="Ticket/scripts/script_ticket.js"></script>
 </body>

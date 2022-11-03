@@ -13,11 +13,11 @@ var respuestaCorrecta = [
 ];
 var img = document.getElementById("correcto");
 var img2 = document.getElementById("error");
+var div = document.getElementById("results");
 
 function comprobarRadio(vector) {
   var respuestasBuenas = 0;
   var respuestasMalas = 0;
-
   for (j = 0; j < vector.length; j++) {
     var radios = document.getElementsByName(j + 1);
     for (i = 0; i < radios.length; i++) {
@@ -57,14 +57,20 @@ function comprobarRadio(vector) {
     respuestasMalas;
 }
 
-function mostrar(){
-for(x = 0; x < respuestaCorrecta.length; x++)
-{
-  if (valor == respuestaCorrecta[x]) {
-    document.getElementById("correcto").style.display = "block";
-  } else{
-    document.getElementById("error").style.display = "block";
+function mostrar(arreglo){
+  for(x=0; x<arreglo.length; x++)
+  {
+    var radioss = document.getElementsByName(j + 1);
+    for (i = 0; i < radioss.length; i++) {
+      if (radioss[i].checked) {
+        var valores = radioss[i].value;
+        if (valores == arreglo[j]) {
+          document.getElementById('correcto').style.display = 'block';
+        }else
+        {
+          document.getElementById('error').style.display = 'block';
+        }
+      }
+    }
   }
-}
-  
 }

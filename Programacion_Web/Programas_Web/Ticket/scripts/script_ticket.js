@@ -45,12 +45,12 @@ function total() {
     "Gracias por su preferencia";
 
   if (total >= 1000 && total <= 1499) {
-    document.getElementById("aviso").innerHTML = "Ganaste una gorra!";
+    alert("Ganaste una gorra!");
   }else if (total >= 1500 && total <= 2499) {
-    document.getElementById("aviso").innerHTML = "Ganaste un balon!";
+    alert("Ganaste un balon!");
   } else if (total >= 2500) {
     total = total-(total * descuento);
-	document.getElementById("aviso").innerHTML = "Ganaste un descuento del 3%!";
+	alert("Ganaste un descuento del 3%!");
     document.getElementById("Total").innerHTML =
       "Total con descuento: " + parseFloat(total);
   }
