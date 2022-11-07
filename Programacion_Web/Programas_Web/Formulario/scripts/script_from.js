@@ -11,10 +11,9 @@ var respuestaCorrecta = [
   "i3",
   "j3",
 ];
-var img = document.getElementById("correcto");
-var img2 = document.getElementById("error");
-var div = document.getElementById("results");
-
+var bien = "✅";
+var mal = "❌";
+var imagenes = new Array();
 function comprobarRadio(vector) {
   var respuestasBuenas = 0;
   var respuestasMalas = 0;
@@ -24,17 +23,23 @@ function comprobarRadio(vector) {
       if (radios[i].checked) {
         var valor = radios[i].value;
         if (valor == vector[j]) {
-          //img.style.visibility = "visible";
-          //img2.style.visibility = "hidden";
+          imagenes[j] = bien;
           respuestasBuenas++;
         } else {
-          //img.style.visibility = "hidden";
-          //img2.style.visibility = "visible";
+          imagenes[j] = mal;
           respuestasMalas++;
         }
       }
     }
   }
+  for (x = 0; x < imagenes.length; x++) {
+    if (radios[i] == vector[j]) {
+      document.getElementById(x + 1).innerHTML = imagenes[x];
+    } else {
+      document.getElementById(x + 1).innerHTML = imagenes[x];
+    }
+  }
+
   promedio = Math.round((respuestasBuenas * 100) / 10);
 
   if (promedio >= 70) {
@@ -46,31 +51,13 @@ function comprobarRadio(vector) {
     alert("Obtuviste beca");
   }
   document.getElementById("resultados").innerHTML =
-    " Respuestas correctas" +
+    " Correct answers" +
     " " +
     "<b>" +
     respuestasBuenas +
     "</b>" +
     "</br>" +
-    "Respuestas malas" +
+    "   wrong answers" +
     " " +
     respuestasMalas;
-}
-
-function mostrar(arreglo){
-  for(x=0; x<arreglo.length; x++)
-  {
-    var radioss = document.getElementsByName(j + 1);
-    for (i = 0; i < radioss.length; i++) {
-      if (radioss[i].checked) {
-        var valores = radioss[i].value;
-        if (valores == arreglo[j]) {
-          document.getElementById('correcto').style.display = 'block';
-        }else
-        {
-          document.getElementById('error').style.display = 'block';
-        }
-      }
-    }
-  }
 }
