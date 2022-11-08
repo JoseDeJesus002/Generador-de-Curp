@@ -54,9 +54,9 @@ function comprobarRadio(vector) {
       document.getElementById(x + 1).innerHTML = imagenes[x];
     }
   }
-//calcula el promedio de el formulario
+  //calcula el promedio de el formulario
   promedio = Math.round((respuestasBuenas * 100) / 10);
-//si el promedio es menor o igual a 70
+  //si el promedio es menor o igual a 70
   if (promedio >= 70) {
     alert("Aprobaste con un " + promedio + "%");
   } else {
@@ -68,6 +68,10 @@ function comprobarRadio(vector) {
   }
   //imprime los resultados obtenidos respuestas correctas e incorrectas
   document.getElementById("resultados").innerHTML =
+    "Score:" +
+    " " +
+    promedio +
+    "<b>" +
     " Correct answers" +
     " " +
     "<b>" +
