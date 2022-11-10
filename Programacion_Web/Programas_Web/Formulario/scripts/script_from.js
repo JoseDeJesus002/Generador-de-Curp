@@ -71,7 +71,7 @@ function comprobarRadio(vector) {
     "Score:" +
     " " +
     promedio +
-    "<b>" +
+    "<br>" +
     " Correct answers" +
     " " +
     "<b>" +
