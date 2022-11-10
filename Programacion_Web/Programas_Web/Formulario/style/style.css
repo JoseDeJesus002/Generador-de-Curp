@@ -61,3 +61,55 @@ div.image{
     text-align: center;
     padding-right: 50px;
 }
+@media screen and (max-width: 600px) {
+    div.form{
+        width: 80%;
+    }
+    div.results{
+        width: 80%;
+    }
+    div.image{
+        display: none;
+        padding-right: 0px;
+    }
+    td{
+        font-size: 12px;
+    }
+    tr{
+        font-size: 12px;
+    }
+    p{
+        font-size: 12px;
+    }
+    button{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    div.form{
+        width: 100%;
+    }
+    div.results{
+        width: 100%;
+    }
+    td{
+        font-size: 12px;
+    }
+    tr{
+        font-size: 12px;
+    }
+    p{
+        font-size: 12px;
+    }
+    button{
+        font-size: 12px;
+    }
+    div.image{
+        display: none;
+        padding-right: 0px;
+    }
+}
+    
+
+

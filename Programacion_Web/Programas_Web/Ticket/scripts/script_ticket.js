@@ -22,7 +22,7 @@ function total() {
   var iva = 0.16;
   var descuento = 0.03;
 
-  var subtotal =
+  let subtotal =
     (precio * parseInt(cantidad)) +
     (precio2 * parseInt(cantidad2)) +
     (precio3 * parseInt(cantidad3)) +
@@ -36,9 +36,9 @@ function total() {
 
   document.getElementById("Subtotal").innerHTML = "El subtotal es: " + subtotal;
   
-  var iva_aumentado = iva * subtotal;
+  let iva_aumentado = iva * subtotal;
   document.getElementById("IVA").innerHTML = "El IVA es: " + iva_aumentado;
-  var total = iva_aumentado + subtotal;
+  let total = iva_aumentado + subtotal;
   document.getElementById("Total").innerHTML =
     "El Total es: " + parseFloat(total);
 	document.getElementById("mensaje").innerHTML =
