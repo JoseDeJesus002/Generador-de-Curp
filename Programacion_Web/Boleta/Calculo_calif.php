@@ -319,12 +319,6 @@ if(isset($_POST['boton8'])){
 }
 //Calificacion final del cuatrimestre
 if(isset($_POST['boton10'])){
-    echo"<link href=css/styles.css rel=stylesheet/>";
-    echo"<link href=css/stylesheets.css rel=stylesheet/>";
-    if ($competencias >= 4) {
-        echo '<script language="javascript">alert("El alumno no se puede reinscribir");</script>';
-        echo "El alumno no se puede reinscribir";
-    }
     echo"<table border=black>";
     echo"<tr>";
     echo"<td>calificacion del cuatrimestre</td>";
@@ -335,6 +329,11 @@ if(isset($_POST['boton10'])){
     echo"<td>$competencias</td>";
     echo"</tr>";
     echo"</table>";
+    //Validacion para la reisncripcion
+    if ($competencias >= 4) {
+        echo '<script language="javascript">alert("El alumno no se puede reinscribir");</script>';
+        echo "El alumno no se puede reinscribir";
+    }
 }
 //Validacion de la beca
 if(isset($_POST['boton11'])){
